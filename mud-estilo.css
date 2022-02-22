@@ -1,0 +1,16 @@
+.azul{
+    background-color: blue;
+    color:#fff;
+}
+.vermelho{
+    background-color: red;
+    color:#fff;
+}
+.verde{
+    background-color: green;
+    color:#000;
+}
+
+#cell{
+    display: none;
+}

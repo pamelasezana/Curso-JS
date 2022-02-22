@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+    
+</head>
+<body>
+  
+    <script>
+        function pegarTemperatura(){
+            return new Promise(function(resolve,reject){
+                console.log("pegando temperatura...");
+    
+                setTimeout(function(){
+                    resolve('40 graus na sombra');
+                },5000);
+            });
+        }
+    
+        //USANDO A PROMISE
+        let temp = pegarTemperatura();
+       temp.then(function(resultado){
+        console.log("temperatura:" + resultado);
+       });
+
+       temp.catch(function (error){
+        console.log("deu erro!");
+       });
+    </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

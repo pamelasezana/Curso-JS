@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="condicionais.css">
+   
+    <title>Desconstruindo Arrays</title>
+</head>
+<body>
+    <h1 id="title">Seja bem vindo</h1>
+
+
+
+  <script>
+     /*
+      let info = ['Pamela Sezana', '24 anos', '@pestvam', 'Ipatinga'];
+
+      let [NomeCompleto, ,, cidade] = info;
+
+      console.log(NomeCompleto, cidade);
+      */ 
+
+      //Podemos também desconstruir um array através de funçao
+
+      function criar(){
+          return [1,2,3];
+      }
+
+      /*
+      let numbers = criar();
+      let [a,b,c] = numbers;
+
+      console.log(a,b,c);
+        */
+
+      //Ou podemos economizar memoria e fazer da seguinte forma
+        let [a,b,c]= criar();
+        console.log(a,b,c);
+
+  </script>
+</body>
+</html>

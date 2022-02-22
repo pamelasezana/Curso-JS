@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Desconstruindo objetos</title>
+</head>
+<body>
+<h1>Desconstruindo objetos</h1>
+
+
+
+
+<script>
+    let pessoa = {
+        nome: 'Pâmela',
+        sobrenome: 'Sezana',
+        idade: 24,
+       social: {
+          facebook:'Pestvam',
+          instagram:{
+              url:'@pestvam',
+              seguidores:300
+          }
+        },
+      
+    };
+
+//agora vamos utilizar function 
+
+function pegarNomeCompleto({nome,sobrenome, social:{instagram:{url:instagram}}}){
+    return `${nome} ${sobrenome} Siga em ${instagram}`;
+}
+
+console.log (pegarNomeCompleto(pessoa));
+
+
+ /* 
+  let nome = pessoa.nome;
+  let endereco = pessoa.endereco.bairro;
+  console.log (idade, nome, endereco);
+   */ //Faziamos dessa forma anteriormente.
+
+  /* let {nome, sobrenome, idade=0} = pessoa; // Destruturação de objetos de uma forma bem mais simples e mais rápida. 
+   
+   console.log(nome, sobrenome, idade);
+   */ 
+
+   //Agora, vamos pegar informaçoes de um objeto dentro de outro objeto.
+
+   //Vamos pegar por exemplo, a rua e o numero de casa da pessoa.
+
+  // let {rua,numero} = pessoa.endereco;
+
+   //podemos também pegar informações do primeiro e do segundo objeto juntos
+  /* let {nome, sobrenome, endereco:{rua,numero}} = pessoa;
+    console.log(nome, sobrenome, rua, numero);
+    */
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.txt{
+    width: 400px;
+    height: 940px;
+    overflow: none;
+    margin:auto;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    font-family: 'Proxima Nova, sans-serif';
+    padding:20px;
+   
+    
+}
+.scrollbutton{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #12adee;
+    position: fixed;
+    right: 10px;
+    bottom:20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+    <title>Operador Spread</title>
+</head>
+<body>
+    <h1>Vamos aprender sobre Operador Spread</h1>
+
+    <script>
+        let numeros = [1,2,3,4,5];
+      //podemos fazer dessa forma 
+     /*
+      let outros = numeros;
+         outros.push(6,7,8,9);
+            console.log(numeros);
+
+     */
+    //Vamos focar em utilizar Operador Spread, então vamos fazer assim:
+    /*
+      let outros = [...numeros,6,7,8,9,10];
+    console.log(outros);
+    */
+
+    /*
+    let info = {
+        nome: 'Gabriel',
+        sobrenome: 'Sezana',
+        idade: 23,
+       
+    };
+    let NovaInfo ={
+        ...info, //operador spread
+       cidade:'São Paulo',
+         estado:'SP',
+            pais:'Brasil',
+    };
+       
+
+    console.log(NovaInfo);
+    */
+
+    function AddInfo(info){
+        let NovasInfo = {
+            ...info,
+            status:0,
+            token: '123456789',
+            data_cadastro:'01/01/2019'
+        
+        };
+        return NovasInfo;
+    }
+        console.log (AddInfo({nome: 'Gabriel', sobrenome: 'Sezana', idade: 23}));
+    
+      
+    </script>
+    </body>
+</html>
